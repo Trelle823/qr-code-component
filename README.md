@@ -31,7 +31,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ```css
 :root {
-      --White: hsl(0, 0, 100%);
+      --White: hsl(0, 0%, 100%);
       --Grayish-blue: hsl(212, 43%, 88%);
       --Lightgray: hsl(206, 4%, 69%);
       --Darkblue: hsl(218, 44%, 22%);
