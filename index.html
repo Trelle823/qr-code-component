@@ -10,13 +10,20 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root {
+      --White: hsl(0, 0, 100%);
+      --Grayish-blue: hsl(212, 43%, 88%);
+      --Lightgray: hsl(206, 4%, 69%);
+      --Darkblue: hsl(218, 44%, 22%);
+    }
+    
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
     body {
-      background: hsl(212, 43%, 88%);
+      background: var(--Grayish-blue);
     }
 
     .qr-container {
@@ -28,7 +35,7 @@
     }
 
     .card {
-      background: #fff;
+      background: var(--White);
       width: 350px;
       padding: 20px;
       border-radius: 10px;
@@ -46,14 +53,14 @@
     .text-1 {
       font-size: 25px;
       font-weight: 700;
-      color: hsl(218, 44%, 22%);
+      color: var(--Darkblue);
       padding: 20px 0;
     }
 
     .text-2 {
       font-size: 18px;
       font-weight: 400;
-      color: hsl(206, 4%, 69%);
+      color: var(--Lightgray);
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -61,7 +68,7 @@
 </head>
 <body>
 
-  <div class="qr-container">
+  <section class="qr-container">
     <div class="card">
       <img src="./images/image-qr-code.png" alt="qr code">
 
@@ -69,7 +76,7 @@
       <div class="text-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
       
     </div>
-  </div>
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
